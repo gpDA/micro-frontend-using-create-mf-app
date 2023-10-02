@@ -1,0 +1,18 @@
+{
+    "sourceFile": "home/package.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1696239876062,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1696239876062,
+            "name": "Commit-0",
+            "content": "{\n  \"name\": \"home\",\n  \"version\": \"1.0.0\",\n  \"scripts\": {\n    \"build\": \"webpack --mode production\",\n    \"build:dev\": \"webpack --mode development\",\n    \"build:start\": \"cd dist && PORT=3000 npx serve\",\n    \"start\": \"webpack serve --open --mode development\",\n    \"start:live\": \"webpack serve --open --mode development --live-reload --hot\"\n  },\n  \"license\": \"MIT\",\n  \"author\": {\n    \"name\": \"Jack Herrington\",\n    \"email\": \"jherr@pobox.com\"\n  },\n  \"devDependencies\": {\n    \"@babel/core\": \"^7.15.8\",\n    \"@babel/plugin-transform-runtime\": \"^7.15.8\",\n    \"@babel/preset-env\": \"^7.15.8\",\n    \"@babel/preset-react\": \"^7.14.5\",\n    \"autoprefixer\": \"^10.1.0\",\n    \"babel-loader\": \"^8.2.2\",\n    \"css-loader\": \"^6.3.0\",\n    \"html-webpack-plugin\": \"^5.3.2\",\n    \"postcss\": \"^8.2.1\",\n    \"postcss-loader\": \"^4.1.0\",\n    \"style-loader\": \"^3.3.0\",\n    \"webpack\": \"^5.57.1\",\n    \"webpack-cli\": \"^4.10.0\",\n    \"webpack-dev-server\": \"^4.3.1\",\n    \"tailwindcss\": \"^2.0.2\"\n  },\n  \"dependencies\": {\n    \"@babel/runtime\": \"^7.13.10\",\n    \"react\": \"^18.2.0\",\n    \"react-dom\": \"^18.2.0\"\n  }\n}"
+        }
+    ]
+}

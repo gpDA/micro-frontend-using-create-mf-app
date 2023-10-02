@@ -1,0 +1,58 @@
+{
+    "sourceFile": "about/src/App.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1696239509637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1696239550979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+import React from \"react\";\n+import ReactDOM from \"react-dom\";\n+import \"./index.scss\";\n+const App = () => (\n+  <div className=\"text-3xl mx-auto max-w-6xl\">\n+    <div class=\"text-center\">\n+      <img\n+        src=\"https://mdbcdn.b-cdn.net/img/new/avatars/8.webp\"\n+        class=\"rounded-full w-32 mb-4 mx-auto\"\n+        alt=\"Avatar\"\n+      />\n+      <h5 class=\"text-xl font-medium leading-tight mb-2\">John Doe</h5>\n+      <p class=\"text-gray-500\">Web designer</p>\n+    </div>\n+  </div>\n+);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696239570119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,21 +12,5 @@\n       <h5 class=\"text-xl font-medium leading-tight mb-2\">John Doe</h5>\n       <p class=\"text-gray-500\">Web designer</p>\n     </div>\n   </div>\n-);\n-import React from \"react\";\n-import ReactDOM from \"react-dom\";\n-import \"./index.scss\";\n-const App = () => (\n-  <div className=\"text-3xl mx-auto max-w-6xl\">\n-    <div class=\"text-center\">\n-      <img\n-        src=\"https://mdbcdn.b-cdn.net/img/new/avatars/8.webp\"\n-        class=\"rounded-full w-32 mb-4 mx-auto\"\n-        alt=\"Avatar\"\n-      />\n-      <h5 class=\"text-xl font-medium leading-tight mb-2\">John Doe</h5>\n-      <p class=\"text-gray-500\">Web designer</p>\n-    </div>\n-  </div>\n );\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696239580650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,15 +2,7 @@\n import ReactDOM from \"react-dom\";\n import \"./index.scss\";\n const App = () => (\n   <div className=\"text-3xl mx-auto max-w-6xl\">\n-    <div class=\"text-center\">\n-      <img\n-        src=\"https://mdbcdn.b-cdn.net/img/new/avatars/8.webp\"\n-        class=\"rounded-full w-32 mb-4 mx-auto\"\n-        alt=\"Avatar\"\n-      />\n-      <h5 class=\"text-xl font-medium leading-tight mb-2\">John Doe</h5>\n-      <p class=\"text-gray-500\">Web designer</p>\n-    </div>\n+    test\n   </div>\n );\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696239596130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,8 @@\n+import React from \"react\";\n+import ReactDOM from \"react-dom\";\n+import \"./index.scss\";\n+const App = () => (\n+  <div className=\"text-3xl mx-auto max-w-6xl\">\n+    test\n+  </div>\n+);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696239610731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,8 @@\n import React from \"react\";\n import ReactDOM from \"react-dom\";\n import \"./index.scss\";\n const App = () => (\n-  <div className=\"text-3xl mx-auto max-w-6xl\">\n+  <div>\n     test\n   </div>\n-);\n-import React from \"react\";\n-import ReactDOM from \"react-dom\";\n-import \"./index.scss\";\n-const App = () => (\n-  <div className=\"text-3xl mx-auto max-w-6xl\">\n-    test\n-  </div>\n );\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696239616750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import React from \"react\";\n+import ReactDOM from \"react-dom\";\n+\n+import \"./index.scss\";\n+\n+const App = () => (\n+  <div className=\"mt-10 text-3xl mx-auto max-w-6xl\">\n+    <div>Name: about</div>\n+    <div>Framework: react</div>\n+    <div>Language: JavaScript</div>\n+    <div>CSS: Tailwind</div>\n+  </div>\n+);\n+ReactDOM.render(<App />, document.getElementById(\"app\"));\n"
+                },
+                {
+                    "date": 1696239625349,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,12 +3,17 @@\n \n import \"./index.scss\";\n \n const App = () => (\n-  <div className=\"mt-10 text-3xl mx-auto max-w-6xl\">\n-    <div>Name: about</div>\n-    <div>Framework: react</div>\n-    <div>Language: JavaScript</div>\n-    <div>CSS: Tailwind</div>\n+  <div className=\"text-3xl mx-auto max-w-6xl\">\n+    <div class=\"text-center\">\n+      <img\n+        src=\"https://mdbcdn.b-cdn.net/img/new/avatars/8.webp\"\n+        class=\"rounded-full w-32 mb-4 mx-auto\"\n+        alt=\"Avatar\"\n+      />\n+      <h5 class=\"text-xl font-medium leading-tight mb-2\">John Doe</h5>\n+      <p class=\"text-gray-500\">Web designer</p>\n+    </div>\n   </div>\n );\n ReactDOM.render(<App />, document.getElementById(\"app\"));\n"
+                },
+                {
+                    "date": 1696239965190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,23 @@\n+import React from \"react\";\n+import ReactDOM from \"react-dom\";\n+\n+import \"./index.scss\";\n+import Header from \"home/Header\";\n+import Footer from \"home/Footer\";\n+\n+const App = () => (\n+  <div className=\"text-3xl mx-auto max-w-6xl\">\n+    <Header />\n+    <div class=\"text-center\">\n+      <img\n+        src=\"https://mdbcdn.b-cdn.net/img/new/avatars/8.webp\"\n+        class=\"rounded-full w-32 mb-4 mx-auto\"\n+        alt=\"Avatar\"\n+      />\n+      <h5 class=\"text-xl font-medium leading-tight mb-2\">John Doe</h5>\n+      <p class=\"text-gray-500\">Web designer</p>\n+    </div>\n+    <Footer />\n+  </div>\n+);\n+ReactDOM.render(<App />, document.getElementById(\"app\"));\n"
+                },
+                {
+                    "date": 1696239971884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,23 @@\n+import React from \"react\";\n+import ReactDOM from \"react-dom\";\n+\n+import \"./index.scss\";\n+import Header from \"home/Header\";\n+import Footer from \"home/Footer\";\n+\n+const App = () => (\n+  <div className=\"text-3xl mx-auto max-w-6xl\">\n+    <Header />\n+    <div class=\"text-center\">\n+      <img\n+        src=\"https://mdbcdn.b-cdn.net/img/new/avatars/8.webp\"\n+        class=\"rounded-full w-32 mb-4 mx-auto\"\n+        alt=\"Avatar\"\n+      />\n+      <h5 class=\"text-xl font-medium leading-tight mb-2\">John Doe</h5>\n+      <p class=\"text-gray-500\">Web designer</p>\n+    </div>\n+    <Footer />\n+  </div>\n+);\n+ReactDOM.render(<App />, document.getElementById(\"app\"));\n"
+                },
+                {
+                    "date": 1696239986533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,54 +20,4 @@\n     <Footer />\n   </div>\n );\n ReactDOM.render(<App />, document.getElementById(\"app\"));\n-import React from \"react\";\n-import ReactDOM from \"react-dom\";\n-\n-import \"./index.scss\";\n-import Header from \"home/Header\";\n-import Footer from \"home/Footer\";\n-\n-const App = () => (\n-  <div className=\"text-3xl mx-auto max-w-6xl\">\n-    <Header />\n-    <div class=\"text-center\">\n-      <img\n-        src=\"https://mdbcdn.b-cdn.net/img/new/avatars/8.webp\"\n-        class=\"rounded-full w-32 mb-4 mx-auto\"\n-        alt=\"Avatar\"\n-      />\n-      <h5 class=\"text-xl font-medium leading-tight mb-2\">John Doe</h5>\n-      <p class=\"text-gray-500\">Web designer</p>\n-    </div>\n-    <Footer />\n-  </div>\n-);\n-ReactDOM.render(<App />, document.getElementById(\"app\"));\n-import React from \"react\";\n-import ReactDOM from \"react-dom\";\n-\n-import \"./index.scss\";\n-\n-const App = () => (\n-  <div className=\"text-3xl mx-auto max-w-6xl\">\n-    <div class=\"text-center\">\n-      <img\n-        src=\"https://mdbcdn.b-cdn.net/img/new/avatars/8.webp\"\n-        class=\"rounded-full w-32 mb-4 mx-auto\"\n-        alt=\"Avatar\"\n-      />\n-      <h5 class=\"text-xl font-medium leading-tight mb-2\">John Doe</h5>\n-      <p class=\"text-gray-500\">Web designer</p>\n-    </div>\n-  </div>\n-);\n-ReactDOM.render(<App />, document.getElementById(\"app\"));\n-import React from \"react\";\n-import ReactDOM from \"react-dom\";\n-import \"./index.scss\";\n-const App = () => (\n-  <div>\n-    test\n-  </div>\n-);\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1696239509637,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\nimport ReactDOM from \"react-dom\";\nimport \"./index.scss\";\nconst App = () => (\n  <div className=\"text-3xl mx-auto max-w-6xl\">\n    <div class=\"text-center\">\n      <img\n        src=\"https://mdbcdn.b-cdn.net/img/new/avatars/8.webp\"\n        class=\"rounded-full w-32 mb-4 mx-auto\"\n        alt=\"Avatar\"\n      />\n      <h5 class=\"text-xl font-medium leading-tight mb-2\">John Doe</h5>\n      <p class=\"text-gray-500\">Web designer</p>\n    </div>\n  </div>\n);"
+        }
+    ]
+}

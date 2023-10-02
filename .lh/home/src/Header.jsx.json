@@ -1,0 +1,18 @@
+{
+    "sourceFile": "home/src/Header.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1696239449246,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1696239449246,
+            "name": "Commit-0",
+            "content": "import React from \"react\"\r\nexport default function Header() {\r\n    return (\r\n        <div className=\"p-5 bg-blue-500 text-white -text-3xl font-bold\">\r\n            Micro Frontend Header\r\n        </div>\r\n    )\r\n}"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "home/webpack.config.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1696239755098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1696239755098,
+            "name": "Commit-0",
+            "content": "const HtmlWebPackPlugin = require(\"html-webpack-plugin\");\nconst ModuleFederationPlugin = require(\"webpack/lib/container/ModuleFederationPlugin\");\n\nconst deps = require(\"./package.json\").dependencies;\nmodule.exports = (_, argv) => ({\n  output: {\n    publicPath: \"http://localhost:3000/\",\n  },\n\n  resolve: {\n    extensions: [\".tsx\", \".ts\", \".jsx\", \".js\", \".json\"],\n  },\n\n  devServer: {\n    port: 3000,\n    historyApiFallback: true,\n  },\n\n  module: {\n    rules: [\n      {\n        test: /\\.m?js/,\n        type: \"javascript/auto\",\n        resolve: {\n          fullySpecified: false,\n        },\n      },\n      {\n        test: /\\.(css|s[ac]ss)$/i,\n        use: [\"style-loader\", \"css-loader\", \"postcss-loader\"],\n      },\n      {\n        test: /\\.(ts|tsx|js|jsx)$/,\n        exclude: /node_modules/,\n        use: {\n          loader: \"babel-loader\",\n        },\n      },\n    ],\n  },\n\n  plugins: [\n    new ModuleFederationPlugin({\n      name: \"home\",\n      filename: \"remoteEntry.js\",\n      remotes: {},\n      exposes: {\n        \"./Header\": \"./src/Header.jsx\",\n        \"./Footer\": \"./src/Footer.jsx\"\n      },\n      shared: {\n        ...deps,\n        react: {\n          singleton: true,\n          requiredVersion: deps.react,\n        },\n        \"react-dom\": {\n          singleton: true,\n          requiredVersion: deps[\"react-dom\"],\n        },\n      },\n    }),\n    new HtmlWebPackPlugin({\n      template: \"./src/index.html\",\n    }),\n  ],\n});\n"
+        }
+    ]
+}
